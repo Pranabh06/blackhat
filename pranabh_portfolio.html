@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of Pranabh Bahukhandi, cybersecurity professional.">
+  <title>Pranabh Bahukhandi | Cybersecurity</title>
+  <style>
+    :root {
+      --navy: #203743;
+      --navy-light: #2d4b59;
+      --ink: #1f2933;
+      --muted: #64727c;
+      --paper: #ffffff;
+      --bg: #f3f6f8;
+      --line: #e2e8ec;
+      --accent: #3d7c91;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      line-height: 1.65;
+    }
+    a { color: inherit; }
+    .hero {
+      background: linear-gradient(135deg, var(--navy), var(--navy-light));
+      color: white;
+      padding: 68px 24px 60px;
+    }
+    .hero-inner, main, footer {
+      width: min(100% - 40px, 960px);
+      margin: 0 auto;
+    }
+    .eyebrow {
+      margin: 0 0 10px;
+      color: #c8d9e0;
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: .78rem;
+      font-weight: 700;
+    }
+    h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); line-height: 1.1; margin: 0; letter-spacing: -.04em; }
+    .subtitle { font-size: 1.15rem; color: #e0e9ed; margin: 16px 0 8px; }
+    .location { color: #c8d9e0; margin: 0 0 26px; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .button {
+      display: inline-block; text-decoration: none; padding: 10px 17px;
+      border-radius: 7px; font-weight: 650; font-size: .95rem;
+      border: 1px solid rgba(255,255,255,.55);
+    }
+    .button.primary { background: white; color: var(--navy); border-color: white; }
+    main { padding: 30px 0 56px; }
+    .layout { display: grid; grid-template-columns: 1.6fr 1fr; gap: 22px; align-items: start; }
+    .card {
+      background: var(--paper); border: 1px solid var(--line); border-radius: 13px;
+      padding: 25px; margin-bottom: 22px; box-shadow: 0 5px 18px rgba(25, 49, 61, .035);
+    }
+    h2 { font-size: 1.22rem; margin: 0 0 18px; letter-spacing: -.015em; }
+    .section-rule { width: 38px; height: 3px; background: var(--accent); border-radius: 5px; margin: -8px 0 20px; }
+    .summary { margin: 0; color: #43515b; }
+    .role { padding: 0 0 22px 17px; border-left: 2px solid var(--line); position: relative; }
+    .role:last-child { padding-bottom: 0; }
+    .role::before {
+      content: ""; position: absolute; left: -6px; top: 7px; width: 10px; height: 10px;
+      border-radius: 50%; background: var(--accent); border: 2px solid white;
+    }
+    .role h3 { font-size: 1.04rem; margin: 0; }
+    .role .title { margin: 2px 0; color: #43515b; font-weight: 600; }
+    .meta { margin: 3px 0 0; color: var(--muted); font-size: .9rem; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag { background: #edf3f5; color: #294958; padding: 6px 10px; border-radius: 6px; font-size: .9rem; }
+    .education-item + .education-item { margin-top: 19px; padding-top: 17px; border-top: 1px solid var(--line); }
+    .education-item h3 { font-size: 1rem; margin: 0 0 4px; }
+    .education-item p { margin: 0; color: var(--muted); font-size: .94rem; }
+    .contact-link { display: block; text-decoration: none; overflow-wrap: anywhere; margin: 9px 0; color: #315f70; }
+    .contact-link:hover { text-decoration: underline; }
+    footer { border-top: 1px solid var(--line); padding: 22px 0 30px; color: var(--muted); font-size: .88rem; text-align: center; }
+    @media (max-width: 700px) {
+      .hero { padding: 50px 0 44px; }
+      .hero-inner, main, footer { width: min(100% - 28px, 960px); }
+      .layout { grid-template-columns: 1fr; gap: 0; }
+      .card { padding: 21px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Cybersecurity · Threat Analysis</p>
+      <h1>Pranabh Bahukhandi</h1>
+      <p class="subtitle">Cyber Defense Professional</p>
+      <p class="location">Bengaluru, Karnataka, India · Goldman Sachs</p>
+      <div class="actions">
+        <a class="button primary" href="mailto:pranabhbahukhandi@gmail.com">Contact me</a>
+        <a class="button" href="https://www.linkedin.com/in/pranabh-bahukhandi-346257128" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="layout">
+      <div>
+        <section class="card" id="about">
+          <h2>About</h2>
+          <div class="section-rule"></div>
+          <p class="summary">Cybersecurity professional with 9 years of experience in Security Operations Center (SOC) and information security. Experienced in monitoring and analysing security events from sources such as firewalls, IDS/IPS, proxy, ePO and audit logs using IBM QRadar and Splunk Enterprise Security SIEM technologies.</p>
+        </section>
+
+        <section class="card" id="experience">
+          <h2>Experience</h2>
+          <div class="section-rule"></div>
+          <article class="role">
+            <h3>Goldman Sachs</h3>
+            <p class="title">Associate — Cyber Defense</p>
+            <p class="meta">June 2022 – Present · Bengaluru, India</p>
+          </article>
+          <article class="role">
+            <h3>Citrix</h3>
+            <p class="title">Security Engineer II</p>
+            <p class="meta">April 2020 – May 2022 · Bengaluru, India</p>
+          </article>
+          <article class="role">
+            <h3>Wipro Limited</h3>
+            <p class="title">Information Security Analyst</p>
+            <p class="meta">November 2017 – March 2020 · Bengaluru Area, India</p>
+          </article>
+        </section>
+
+        <section class="card" id="education">
+          <h2>Education</h2>
+          <div class="section-rule"></div>
+          <div class="education-item">
+            <h3>DIT University</h3>
+            <p>Bachelor of Technology (BTech), Computer Science with specialization in Cloud Computing</p>
+            <p>2013 – 2017</p>
+          </div>
+          <div class="education-item">
+            <h3>Delhi Public School, Ranipur Haridwar</h3>
+            <p>April 1999 – March 2013</p>
+          </div>
+        </section>
+      </div>
+
+      <aside>
+        <section class="card" id="skills">
+          <h2>Top Skills</h2>
+          <div class="section-rule"></div>
+          <div class="tag-list">
+            <span class="tag">Threat Analysis</span>
+            <span class="tag">Splunk</span>
+            <span class="tag">IBM QRadar</span>
+            <span class="tag">Security Monitoring</span>
+            <span class="tag">SIEM</span>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Certification</h2>
+          <div class="section-rule"></div>
+          <p class="summary">Certified Network Security Specialist</p>
+        </section>
+
+        <section class="card" id="contact">
+          <h2>Get in touch</h2>
+          <div class="section-rule"></div>
+          <a class="contact-link" href="mailto:pranabhbahukhandi@gmail.com">✉ pranabhbahukhandi@gmail.com</a>
+          <a class="contact-link" href="https://www.linkedin.com/in/pranabh-bahukhandi-346257128" target="_blank" rel="noopener noreferrer">↗ LinkedIn</a>
+          <p class="meta">Bengaluru, Karnataka, India</p>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="year">2026</span> Pranabh Bahukhandi · Personal portfolio
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
